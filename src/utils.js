@@ -28,4 +28,4 @@ const mm = () => {
     return mm;
 };
 
-module.exports = { rdn, tensor, mm };
+module.exports = { rdn, mm };
