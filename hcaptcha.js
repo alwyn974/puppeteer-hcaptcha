@@ -76,7 +76,7 @@ const getHSW = async (req) => {
             "--window-position=000,000",
             "--disable-dev-shm-usage",
             "--no-sandbox",
-            '--user-data-dir="/tmp/chromium"',
+            '--user-data-dir=/tmp/chromium',
             "--disable-web-security",
             "--disable-features=site-per-process",
         ],
@@ -115,7 +115,7 @@ const getAnswersTF = async (request_image, tasks) => {
                 if (
                     data.localizedObjectAnnotations.find(
                         (i) =>
-                            data.name.toUpperCase() ===
+                            i.name.toUpperCase() ===
                                 request_image.toUpperCase() && i.score > 0.5
                     )
                 ) {
