@@ -33,7 +33,7 @@ const getHSL = async (req) => {
             "--window-position=000,000",
             "--disable-dev-shm-usage",
             "--no-sandbox",
-            '--user-data-dir="/tmp/chromium"',
+            '--user-data-dir=/tmp/chromium',
             "--disable-web-security",
             "--disable-features=site-per-process",
         ],
